@@ -99,27 +99,22 @@
 //       return data;
 // }
 
-// console.log(arrayOfMultiples(12,10));
-// function landMass() {
-//     let mass = (arguments["1"]*100/149000000)
-//     let twoDecimals=mass.toFixed(2)
-//     return ` {"percent":${twoDecimals}, "message": "${arguments["0"]} representa el ${twoDecimals}% de la masa de la tierra"}`
-// }
+ //console.log(arrayOfMultiples(12,10));
 
-// console.log(landMass("USA", 9372610));
+ function landMass() {
+     let mass = (arguments["1"]*100/149000000)
+     let twoDecimals=mass.toFixed(2)
+     return ` {"percent":${typeof parseInt(twoDecimals) }, "message": "${arguments["0"]} representa el ${twoDecimals}% de la masa de la tierra"}`
+ }
 
+ console.log(landMass("Colombia", 1143000));
 
-function isSpecialArray (specialArr) {
-    const arrayPar=[]
-    const arrayImpar=[]
-
-    for (let i =0; i < specialArr.length; i++) {
-        arrayPar.push(specialArr[i]);
-        
-    }
-
-    return arrayPar;
-}
+//const capitalizeLetters = (str) => {
+    //Implementación
+//    let data = str.split(" ") 
+//    return data.map(p=>p[0].toUpperCase() + p.slice(1)).join(" ")
+    
+//    }
 
 
-console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]));
+//console.log(capitalizeLetters("i love academlo"));
